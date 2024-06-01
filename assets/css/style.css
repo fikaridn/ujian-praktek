@@ -3,7 +3,7 @@
 :root {
   --c-dark: #212529;
   --c-brand: #4e57d4;
-  --c-brand-light: #777ee4;
+  --c-brand-light: #646de6;
   --c-brand-rgb: 78, 87, 212;
   --c-body: #727272;
   --font-base: "ClashDisplay", sans-serif;
@@ -240,4 +240,55 @@ img {
   bottom: -14px;
   background-color: white;
   transform: rotate(45deg);
+}
+
+/* Team */
+.team-member-content {
+  background-color: var(--c-brand);
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  width: calc(100% - 50px);
+  transform: translateX(-50%);
+  padding: 24px;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.team-member:hover .team-member-content {
+  opacity: 1;
+  bottom: 24px;
+}
+
+/* Contact */
+#contact {
+  position: relative;
+  z-index: 2;
+}
+
+#contact::after {
+  content: "";
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(
+      rgba(var(--c-brand-rgb), 0.8),
+      rgba(var(--c-brand-rgb), 0.8)
+    ),
+    url(../images/counter.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#contact .form-control {
+  border-radius: 0;
+  border-color: #969696;
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+  border-color: var(--c-brand);
 }

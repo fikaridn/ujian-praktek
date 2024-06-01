@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -64,7 +66,7 @@
               <a class="nav-link" href="index.html#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#kontak">Kontak</a>
+              <a class="nav-link" href="index.html#contact">Kontak</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html#blog">Blog</a>
@@ -500,16 +502,119 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row g-4 text-center">
           <div class="col-md-4">
             <div class="team-member image-zoom">
               <div class="image-zoom-wrapper">
                 <img src="./assets/images/team (1).jpg" alt="team-1" />
               </div>
               <div class="team-member-content">
-                <h4>Team Member 1</h4>
-                <p class="mb-0">Jabatan</p>
+                <h4 class="text-white">Team Member 1</h4>
+                <p class="mb-0 text-white">Jabatan</p>
               </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member image-zoom">
+              <div class="image-zoom-wrapper">
+                <img src="./assets/images/team (4).jpg" alt="team-4" />
+              </div>
+              <div class="team-member-content">
+                <h4 class="text-white">Team Member 2</h4>
+                <p class="mb-0 text-white">Jabatan</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member image-zoom">
+              <div class="image-zoom-wrapper">
+                <img src="./assets/images/team (3).jpg" alt="team-3" />
+              </div>
+              <div class="team-member-content">
+                <h4 class="text-white">Team Member 3</h4>
+                <p class="mb-0 text-white">Jabatan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section-padding bg-light" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold text-white">Get in Touch</h1>
+              <div class="line bg-white"></div>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi molestias fugit recusandae.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+              <div class="form-group col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="enter first name"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="enter last name"
+                />
+              </div>
+              <div class="form-group col-lg-12">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="enter email address"
+                />
+              </div>
+              <div class="form-group col-lg-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="enter subject"
+                />
+              </div>
+              <div class="form-group col-lg-12">
+                <textarea
+                  name="message"
+                  rows="5"
+                  class="form-control"
+                  placeholder="enter message"
+                ></textarea>
+              </div>
+              <div class="form-group col-lg-12 d-grid">
+                <button class="btn btn-brand">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">Latest News & Articles</h1>
+              <div class="line"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi molestias fugit recusandae.
+              </p>
             </div>
           </div>
         </div>
@@ -521,6 +626,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
